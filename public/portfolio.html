@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="loadMenu.js" defer></script>
     <script src="script.js" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="menu-container"></div>
-    <!-- 헤더 -->
+
     <header>
-        <h1>📈 내 주식 포트폴리오</h1>
-        <p>현재 주식 현황을 실시간으로 확인하세요.</p>
+      <h1>📈 내 주식 포트폴리오</h1>
+      <p>현재 주식 현황을 실시간으로 확인하세요.</p>
     </header>
 
-    <!-- 메인 콘텐츠 -->
     <main>
-        <!-- 포트폴리오 요약 섹션 -->
-        <section id="portfolio-summary">
-            <div class="summary-card">
-                <h3>총 자산</h3>
-                <p id="total-assets">₩0</p>
-            </div>
-            <div class="summary-card">
-                <h3>총 수익률</h3>
-                <p id="total-return">0%</p>
-            </div>
-        </section>
+      <section id="portfolio-summary">
+        <div class="summary-card">
+          <h3>총 자산</h3>
+          <p id="total-assets">₩0</p>
+        </div>
+        <div class="summary-card">
+          <h3>총 수익률</h3>
+          <p id="total-return">0%</p>
+        </div>
+      </section>
 
-        <!-- 보유 종목 섹션 -->
-        <section id="stocks">
-            <h2>📊 보유 종목</h2>
-            <div class="stock-card">
-                <h3>삼성전자</h3>
-                <p>현재 가격: <span id="samsung-price"></span></p>
-                <canvas id="chart-samsung" width="150" height="75"></canvas>
-            </div>
-        </section>
+      <section id="stocks">
+        <h2>📊 보유 종목</h2>
+        <div class="stock-card">
+          <h3>삼성전자</h3>
+          <p>현재 가격: <span id="samsung-price"></span></p>
+          <canvas id="chart-samsung" width="150" height="75"></canvas>
+        </div>
+        <div class="stock-card">
+          <h3>애플</h3>
+          <p>현재 가격: <span id="apple-price"></span></p>
+          <canvas id="chart-apple" width="150" height="75"></canvas>
+        </div>
+        <div class="stock-card">
+          <h3>엔비디아</h3>
+          <p>현재 가격: <span id="nvidia-price"></span></p>
+          <canvas id="chart-nvidia" width="150" height="75"></canvas>
+        </div>
+        <div class="stock-card">
+          <h3>테슬라</h3>
+          <p>현재 가격: <span id="tesla-price"></span></p>
+          <canvas id="chart-tesla" width="150" height="75"></canvas>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2024 주식 포트폴리오 대시보드</p>
+      <p>© 2024 주식 포트폴리오 대시보드</p>
     </footer>
-</body>
+  </body>
 </html>
