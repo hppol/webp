@@ -136,6 +136,62 @@ canvas {
   margin-top: 10px;
 }
 
+/* feature.html */
+/* 카드 스타일 */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px); /* 마우스 오버시 카드가 살짝 떠오르는 효과 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 카드 텍스트 스타일 */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* 카드 아이콘 */
+.card i {
+  transition: transform 0.3s ease;
+}
+.card:hover i {
+  transform: scale(1.1); /* 마우스 오버시 아이콘이 커지는 효과 */
+}
+
+/* 헤더 스타일 */
+h1.display-4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* 텍스트에 그림자 추가 */
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* 카드 안의 텍스트 */
+.card-body {
+  padding: 2rem;
+}
+
+/* 이미지 사이즈 조정 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* 헤더 스타일 */
 header {
   text-align: center;
