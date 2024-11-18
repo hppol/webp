@@ -85,29 +85,34 @@
     </section>
 
     <!-- 슬라이더 섹션 -->
-    <section id="slider" class="py-5 bg-light position-relative">
-      <div class="container text-center">
-        <h2>투자 인사이트</h2>
-        <p class="lead">당신의 투자 전략을 강화하는 유용한 팁</p>
-        <div class="slider-container">
-          <div class="slide">
-            <h3>Tip 1: 분산 투자</h3>
-            <p>자산을 여러 산업에 분산하여 리스크를 최소화하세요.</p>
+    <section class="tips-slider py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">투자 인사이트</h2>
+        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h3>Tip 1: 분산 투자</h3>
+              <p>자산을 여러 산업에 분산하여 리스크를 최소화하세요.</p>
+            </div>
+            <div class="carousel-item">
+              <h3>Tip 2: 장기 투자</h3>
+              <p>시장의 변동성을 견디고 장기적인 성장을 목표로 하세요.</p>
+            </div>
+            <div class="carousel-item">
+              <h3>Tip 3: 리서치의 중요성</h3>
+              <p>주식에 투자하기 전 충분히 리서치하세요.</p>
+            </div>
           </div>
-          <div class="slide">
-            <h3>Tip 2: 장기 투자</h3>
-            <p>시장의 변동성을 견디고 장기적인 성장을 목표로 하세요.</p>
-          </div>
-          <div class="slide">
-            <h3>Tip 3: 리서치의 중요성</h3>
-            <p>주식에 투자하기 전 충분히 리서치하세요.</p>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#textCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#textCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
-        <!-- 왼쪽, 오른쪽 버튼 추가 -->
-        <button id="prev-btn" class="slider-btn prev">&lt;</button>
-        <button id="next-btn" class="slider-btn next">&gt;</button>
       </div>
     </section>
+    
     
 
 <!-- 고객 후기 섹션 -->
