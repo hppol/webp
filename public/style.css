@@ -13,6 +13,7 @@ h3 {
 }
 
 /* menu.html */
+
 .menu {
   background-color: #333333;
   padding: 10px;
@@ -47,6 +48,56 @@ h3 {
   background-color: #e0e0e0;
   height: 1500px;
 }
+.customer-photos img {
+  max-height: 300px; /* 이미지 최대 높이 */
+  object-fit: cover; /* 비율 유지하면서 크기 조정 */
+  border-radius: 10px; /* 이미지 둥근 모서리 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.carousel-inner {
+  text-align: center; /* 이미지를 중앙에 맞춤 */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* 화살표 버튼을 흰색으로 변경 (밝은 배경에 어울리게) */
+}
+
+
+/* 슬라이더 버튼 스타일 */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #007bff; /* 버튼 색상 */
+  color: white; /* 버튼 글자 색상 */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  opacity: 0.8; /* 반투명 효과 */
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+/* 왼쪽 버튼 */
+.slider-btn.prev {
+  left: 10px; /* 슬라이더 왼쪽에 위치 */
+}
+
+/* 오른쪽 버튼 */
+.slider-btn.next {
+  right: 10px; /* 슬라이더 오른쪽에 위치 */
+}
+
+
+
+
 
 /* portfolio.html */
 #portfolio-summary {
